@@ -1,5 +1,7 @@
+import styles from './Home.module.scss';
+
 const Home = ({ links, me }) => {
-  return <div>Enter</div>;
+  return <section className={styles.section}>Enter</section>;
 };
 
 export default Home;
