@@ -1,14 +1,18 @@
 import useOutside from '@/hooks/useOutside';
 import styles from './DescriptionButton.module.scss';
+import cn from 'classnames';
 
-const DescriptionButton = () => {
+const DescriptionButton = ({ description }) => {
   const { ref, isShown, setIsShown } = useOutside();
 
   return (
     <div className={styles.parent} ref={ref}>
-      <button onClick={() => setIsShown(!isShown)} className={styles.btn}>
+      <button
+        onClick={() => setIsShown(!isShown)}
+        className={cn({ [styles.active]: isShown })}>
         <span>About me</span>
       </button>
+      {isShown && <article>{description}</article>}
     </div>
   );
 };
