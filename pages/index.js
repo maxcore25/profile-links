@@ -1,4 +1,4 @@
-import Home from '../app/components/screens/home/Home';
+import Home from '@/components/screens/home/Home';
 import axios from 'axios';
 import { API_URL } from '@/app/constants';
 

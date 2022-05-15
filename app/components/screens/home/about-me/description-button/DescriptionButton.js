@@ -1,7 +1,7 @@
-import useOutside from '../../../../../hooks/useOutside';
+import useOutside from '@/hooks/useOutside';
 
 const DescriptionButton = () => {
-  const {} = useOutside();
+  const { ref, isShown, setIsShown } = useOutside();
 
   return <div>Enter</div>;
 };

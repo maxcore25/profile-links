@@ -3,7 +3,7 @@ import MetaTitle from '../../ui/MetaTitle';
 import AboutMe from '../home/about-me/AboutMe';
 import RecentVideos from '../home/recent-videos/RecentVideos';
 import Grid from '../home/grid/Grid';
-import Circles from '../../ui/circles/Circles';
+import Circles from '@/ui/circles/Circles';
 
 const Home = ({ links, me }) => {
   return (
