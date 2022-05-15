@@ -1,3 +1,5 @@
+import useOutside from '../../../../../hooks/useOutside';
+
 const DescriptionButton = () => {
   const {} = useOutside();
 

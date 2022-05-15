@@ -1,6 +1,6 @@
 import Home from '../app/components/screens/home/Home';
 import axios from 'axios';
-import { API_URL } from '../../../constants';
+import { API_URL } from '@/app/constants';
 
 export default function HomePage(props) {
   return <Home {...props} />;
