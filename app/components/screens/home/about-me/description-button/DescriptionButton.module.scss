@@ -1,2 +1,18 @@
 .parent {
+  @apply absolute top-5 right-5;
+
+  button {
+    @apply cursor-pointer border-none outline-none bg-bgColor hover:bg-black transition-colors py-2 px-4 text-white;
+
+    &.active {
+      @apply bg-black;
+    }
+  }
+
+  article {
+    @apply animate-scaleIn absolute ring-0 top-10 bg-bgColor text-white text-sm px-4 text-left;
+
+    width: 28rem;
+    box-shadow: 0 3px 6px rgba($color: #000000, $alpha: 0.2);
+  }
 }
