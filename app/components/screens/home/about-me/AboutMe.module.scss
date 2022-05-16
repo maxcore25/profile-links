@@ -1,0 +1,23 @@
+.me {
+  @apply mt-40 mb-6 text-center bg-zinc-900 relative;
+
+  .image-wrapper {
+    @apply mb-6;
+
+    span {
+      margin-top: -3rem !important;
+    }
+
+    .image {
+      @apply rounded-full;
+    }
+  }
+
+  .heading {
+    @apply mb-5 text-3xl font-semibold text-white;
+
+    span {
+      @apply mr-2;
+    }
+  }
+}
