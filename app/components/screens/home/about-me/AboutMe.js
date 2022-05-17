@@ -9,7 +9,7 @@ const AboutMe = ({ me }) => {
     <div className={styles.me}>
       <div className={styles['image-wrapper']}>
         <Image
-          src={`${APP_URL}${me.avatar}`}
+          src={`https://avatars.githubusercontent.com/u/32432799?s=400&v=4`}
           alt={me.siteName}
           width={190}
           height={190}
@@ -19,7 +19,7 @@ const AboutMe = ({ me }) => {
       <div className={styles.heading}>
         <span>maxcore25</span>
         <Image
-          src={`${APP_URL}/icons/verified.svg`}
+          src={`https://redlinks.space/icons/verified.svg`}
           alt='Verified'
           width={16}
           height={16}
