@@ -18,6 +18,7 @@ const EmailButton = () => {
             height={18}
           />
         </span>
+        <span>Email</span>
       </a>
     </div>
   );

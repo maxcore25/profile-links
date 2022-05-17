@@ -2,13 +2,11 @@
   @apply mt-40 mb-6 text-center bg-zinc-900 relative;
 
   .image-wrapper {
-    @apply mb-6;
-
     span {
-      margin-top: -3rem !important;
+      transform: translateY(-3rem);
     }
 
-    .image {
+    img {
       @apply rounded-full;
     }
   }
