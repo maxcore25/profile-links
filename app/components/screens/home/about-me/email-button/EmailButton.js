@@ -12,7 +12,7 @@ const EmailButton = () => {
         title='maxcore2500@gmail.com'>
         <span>
           <Image
-            src={`${APP_URL}/icons/email.svg`}
+            src={`https://redlinks.space/icons/email.svg`}
             alt='Email Icon'
             width={18}
             height={18}

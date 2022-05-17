@@ -1,9 +1,9 @@
-import useOutside from '@/hooks/useOutside';
+import { useOutside } from '@/hooks/useOutside';
 import styles from './DescriptionButton.module.scss';
 import cn from 'classnames';
 
 const DescriptionButton = ({ description }) => {
-  const { ref, isShown, setIsShown } = useOutside();
+  const { ref, isShown, setIsShown } = useOutside(false);
 
   return (
     <div className={styles.parent} ref={ref}>
