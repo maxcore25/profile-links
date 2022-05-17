@@ -2,6 +2,7 @@ import styles from './AboutMe.module.scss';
 import Image from 'next/image';
 import EmailButton from './email-button/EmailButton';
 import DescriptionButton from './description-button/DescriptionButton';
+import { APP_URL } from '@/app/constants';
 
 const AboutMe = ({ me }) => {
   return (
