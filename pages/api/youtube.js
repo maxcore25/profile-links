@@ -15,14 +15,14 @@ export default async function handler(req, res) {
     '"}],"accessibility":'
   );
 
-  const thumbnail = getString(result, '{"thumbnails":[{"url":"', '","width"');
-
   const videId = getString(
     result,
     '"gridVideoRenderer":{"videoId":"',
     '","thumbnail":'
   );
 
+  const thumbnail = getString(result, '{"thumbnails":[{"url":"', '","width"');
+
   //   const result = [];
-  res.status(200).json(title);
+  res.status(200).json({ title, videId, thumbnail });
 }
