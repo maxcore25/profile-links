@@ -5,7 +5,7 @@ const getString = (initialText, start, end) => {
   return initialText.substring(from, to).replace(start, '');
 };
 
-export default async function handler(req, res) {
+const parseFirstVideo = async name => {
   const data = await fetch('https://www.youtube.com/c/Freecodecamp/videos');
   const result = await data.text();
 
@@ -23,6 +23,12 @@ export default async function handler(req, res) {
 
   const thumbnail = getString(result, '{"thumbnails":[{"url":"', '","width"');
 
+  return { title, videId, thumbnail };
+};
+
+export default async function handler(req, res) {
+  parseFirstVideo();
+
   //   const result = [];
-  res.status(200).json({ title, videId, thumbnail });
+  res.status(200).json();
 }
