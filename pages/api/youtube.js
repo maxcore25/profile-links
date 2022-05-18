@@ -27,8 +27,10 @@ const parseFirstVideo = async name => {
 };
 
 export default async function handler(req, res) {
-  parseFirstVideo('Freecodecamp');
+  const result = [
+    await parseFirstVideo('Freecodecamp'),
+    await parseFirstVideo('James Q Quick'),
+  ];
 
-  //   const result = [];
-  res.status(200).json();
+  res.status(200).json(result);
 }
