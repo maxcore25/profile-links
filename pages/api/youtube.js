@@ -6,7 +6,7 @@ const getString = (initialText, start, end) => {
 };
 
 const parseFirstVideo = async name => {
-  const data = await fetch('https://www.youtube.com/c/Freecodecamp/videos');
+  const data = await fetch(`https://www.youtube.com/c/${name}/videos`);
   const result = await data.text();
 
   const title = getString(
@@ -27,7 +27,7 @@ const parseFirstVideo = async name => {
 };
 
 export default async function handler(req, res) {
-  parseFirstVideo();
+  parseFirstVideo('Freecodecamp');
 
   //   const result = [];
   res.status(200).json();
