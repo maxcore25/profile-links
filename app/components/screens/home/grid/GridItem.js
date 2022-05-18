@@ -1,3 +1,4 @@
+import AnimateBlock from '@/app/components/ui/animate-block/AnimateBlock';
 import styles from './Grid.module.scss';
 
 const GridItem = ({ item }) => {
@@ -15,7 +16,8 @@ const GridItem = ({ item }) => {
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src={item.icon.path} alt='' width={item.icon.width} />
       </div>
-      <div className={styles.title}>{item.title}</div>
+      <h4 className={styles.title}>{item.title}</h4>
+      {item.isImportant && <AnimateBlock />}
     </a>
   );
 };
