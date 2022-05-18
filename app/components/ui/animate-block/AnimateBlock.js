@@ -1,5 +1,7 @@
+import styles from './AnimateBlock.module.scss';
+
 const AnimateBlock = () => {
-  return <div>Enter</div>;
+  return <div className={styles.animation}></div>;
 };
 
 export default AnimateBlock;
