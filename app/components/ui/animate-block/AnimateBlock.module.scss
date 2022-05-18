@@ -1,0 +1,24 @@
+.animation {
+  @apply absolute w-full rounded-tl-layout rounded-br-layout bg-primary bg-opacity-70 opacity-70 top-0 right-0;
+
+  height: calc(100% - 30px);
+  animation: opacity 2.5s ease infinite, transform 2.5 ease-out infinite;
+}
+
+@keyframes opacity {
+  from {
+    opacity: 0.7;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes transform {
+  from {
+    transition: scale(1);
+  }
+  to {
+    transition: scale(1.4);
+  }
+}
