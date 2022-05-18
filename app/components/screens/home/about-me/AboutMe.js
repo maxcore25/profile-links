@@ -14,6 +14,7 @@ const AboutMe = ({ me }) => {
           width={190}
           height={190}
           quality={100}
+          priority
         />
       </div>
       <div className={styles.heading}>
