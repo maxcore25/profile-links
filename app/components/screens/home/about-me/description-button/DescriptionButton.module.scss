@@ -10,7 +10,7 @@
   }
 
   article {
-    @apply animate-scaleIn absolute ring-0 top-10 bg-bgColor text-white text-sm px-4 text-left;
+    @apply animate-scaleIn absolute right-0 top-12 bg-bgColor text-white text-sm px-4 text-left;
 
     width: 28rem;
     box-shadow: 0 3px 6px rgba($color: #000000, $alpha: 0.2);
