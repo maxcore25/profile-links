@@ -41,6 +41,12 @@
 
   .heading {
     @apply mb-5 text-3xl font-semibold text-white;
+    @include media(tablet) {
+      @apply text-2xl mb-4;
+    }
+    @include media(mobile) {
+      @apply text-2xl mb-2;
+    }
 
     > span {
       @apply mr-2;
