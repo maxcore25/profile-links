@@ -18,7 +18,7 @@ const RecentVideos = () => {
       {isLoading
         ? 'Loading...'
         : data?.length
-        ? data.map(video => <VideoItem key={video._id} item={video} />)
+        ? data.map(video => <VideoItem key={video.videoId} item={video} />)
         : 'No Videos'}
     </div>
   );

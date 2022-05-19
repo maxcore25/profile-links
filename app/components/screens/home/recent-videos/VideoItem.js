@@ -1,7 +1,6 @@
 import styles from './RecentVideos.module.scss';
 
 const VideoItem = ({ item }) => {
-  console.log(item);
   return (
     <a
       href={`https://youtu.be/${item.videoId}`}
