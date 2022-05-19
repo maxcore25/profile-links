@@ -1,0 +1,25 @@
+.wrapper {
+  @apply bg-zinc-900 p-3  text-white flex items-center flex-wrap;
+  min-height: 70px;
+
+  .heading {
+    @apply text-white text-lg inline-block mr-6;
+  }
+}
+
+.item {
+  @apply flex items-center bg-bgColor hover:bg-black transition-colors py-2 px-3 animate-fade duration-300 ease-in-out;
+  width: 41%;
+
+  &:last-child {
+    @apply ml-6;
+  }
+
+  > img {
+    @apply ml-6;
+  }
+
+  > span {
+    @apply text-white truncate;
+  }
+}
