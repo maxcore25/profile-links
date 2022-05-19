@@ -1,9 +1,37 @@
+@import '../../../../assets/styles/media';
+
 .me {
   @apply mt-40 mb-6 text-center bg-zinc-900 relative;
+  @include media(laptop) {
+    @apply mt-28;
+  }
+  @include media(tablet) {
+    @apply mt-20 mb-4;
+  }
+  @include media(mobile) {
+    @apply mt-16 mb-3;
+  }
 
   .image-wrapper {
-    span {
+    // @apply mb-6;
+    @include media(tablet) {
+      @apply mb-4;
+    }
+    @include media(mobile) {
+      @apply mb-2;
+    }
+
+    > span {
       transform: translateY(-3rem);
+      @include media(tablet) {
+        width: 150px !important;
+        height: 150px !important;
+      }
+      @include media(mobile) {
+        width: 120px !important;
+        height: 120px !important;
+        margin-top: -2.5rem !important;
+      }
     }
 
     img {
@@ -14,8 +42,11 @@
   .heading {
     @apply mb-5 text-3xl font-semibold text-white;
 
-    span {
+    > span {
       @apply mr-2;
+      @include media(mobile) {
+        @apply mr-1;
+      }
     }
   }
 }
