@@ -15,7 +15,7 @@ const parseFirstVideo = async name => {
     '"}],"accessibility":'
   );
 
-  const videId = getString(
+  const videoId = getString(
     result,
     '"gridVideoRenderer":{"videoId":"',
     '","thumbnail":'
@@ -23,7 +23,7 @@ const parseFirstVideo = async name => {
 
   const thumbnail = getString(result, '{"thumbnails":[{"url":"', '","width"');
 
-  return { title, videId, thumbnail };
+  return { title, videoId, thumbnail };
 };
 
 export default async function handler(req, res) {
