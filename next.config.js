@@ -9,10 +9,10 @@ const nextConfig = {
       'redlinks.space',
     ],
   },
-  env: {
-    APP_URL: process.env.REACT_APP_URL,
-    APP_ENV: process.env.REACT_APP_ENV,
-  },
+  // env: {
+  //   APP_URL: process.env.REACT_APP_URL,
+  //   APP_ENV: process.env.REACT_APP_ENV,
+  // },
 };
 
 module.exports = nextConfig;
